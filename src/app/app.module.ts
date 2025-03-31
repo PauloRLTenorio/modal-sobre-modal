@@ -7,12 +7,12 @@ import { ModaisComponent } from './modais/modais.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    ModaisComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ModaisComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

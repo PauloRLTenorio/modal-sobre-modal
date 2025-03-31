@@ -1,1 +1,34 @@
-<p>modais works!</p>
+<!-- Botão para abrir o primeiro modal -->
+<button class="btn btn-primary" (click)="abrirModal1()">Abrir Modal 1</button>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal1Label">Modal 1</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Este é o primeiro modal.
+        <br><br>
+        <button class="btn btn-secondary" (click)="abrirModal2()">Abrir Modal 2</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 (sobreposto ao primeiro) -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true" data-bs-backdrop="static">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title" id="modal2Label">Modal 2 (sobre Modal 1)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        Este é o segundo modal, aberto sobre o primeiro.
+      </div>
+    </div>
+  </div>
+</div>
